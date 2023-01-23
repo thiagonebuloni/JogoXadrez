@@ -1,0 +1,15 @@
+/home/thiago/Documents/csharp/aulas/JogoXadrez/obj/Debug/net6.0/JogoXadrez.csproj.AssemblyReference.cache
+/home/thiago/Documents/csharp/aulas/JogoXadrez/obj/Debug/net6.0/JogoXadrez.GeneratedMSBuildEditorConfig.editorconfig
+/home/thiago/Documents/csharp/aulas/JogoXadrez/obj/Debug/net6.0/JogoXadrez.AssemblyInfoInputs.cache
+/home/thiago/Documents/csharp/aulas/JogoXadrez/obj/Debug/net6.0/JogoXadrez.AssemblyInfo.cs
+/home/thiago/Documents/csharp/aulas/JogoXadrez/obj/Debug/net6.0/JogoXadrez.csproj.CoreCompileInputs.cache
+/home/thiago/Documents/csharp/aulas/JogoXadrez/bin/Debug/net6.0/JogoXadrez
+/home/thiago/Documents/csharp/aulas/JogoXadrez/bin/Debug/net6.0/JogoXadrez.deps.json
+/home/thiago/Documents/csharp/aulas/JogoXadrez/bin/Debug/net6.0/JogoXadrez.runtimeconfig.json
+/home/thiago/Documents/csharp/aulas/JogoXadrez/bin/Debug/net6.0/JogoXadrez.dll
+/home/thiago/Documents/csharp/aulas/JogoXadrez/bin/Debug/net6.0/JogoXadrez.pdb
+/home/thiago/Documents/csharp/aulas/JogoXadrez/obj/Debug/net6.0/JogoXadrez.dll
+/home/thiago/Documents/csharp/aulas/JogoXadrez/obj/Debug/net6.0/refint/JogoXadrez.dll
+/home/thiago/Documents/csharp/aulas/JogoXadrez/obj/Debug/net6.0/JogoXadrez.pdb
+/home/thiago/Documents/csharp/aulas/JogoXadrez/obj/Debug/net6.0/JogoXadrez.genruntimeconfig.cache
+/home/thiago/Documents/csharp/aulas/JogoXadrez/obj/Debug/net6.0/ref/JogoXadrez.dll
