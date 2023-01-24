@@ -92,12 +92,20 @@ namespace JogoXadrez.Utils;
 
                 // cria e popula posicoes
                 string[,] posicoes = new string[8,8];
+
+                // instancia peças
+                Peca peaoBranco1 = new Peca(1, Cor.BRANCA, Peca.Pecas.PEAO, "2A", true);
+                posicoes[6,0] = peaoBranco1.UniCode;
+                Peca peaoBranco2 = new Peca(2, Cor.BRANCA, Peca.Pecas.PEAO, "2B", true);
+                posicoes[6,1] = peaoBranco2.UniCode;
+                Peca peaoBranco3 = new Peca(3, Cor.BRANCA, Peca.Pecas.PEAO, "3C", true);
+                posicoes[6,2] = peaoBranco3.UniCode;
                 
                 int contador = 1;
-                bool inverteCores = true;
+                
                 for (int i = 0; i < 8; i++) {
                     for (int j = 0; j < 8; j++) {
-                        posicoes[i,j] = $"  ";
+                        if (posicoes[i,j] == null) posicoes[i,j] = $"  ";
                         contador++;
                     }
 
@@ -105,7 +113,7 @@ namespace JogoXadrez.Utils;
 
 
                 string jogadorTurno = "Brancas";
-                int jogadaAtual = 0;
+                // int jogadaAtual = 0;
 
 
                 // laço do jogo
