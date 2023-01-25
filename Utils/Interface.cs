@@ -14,9 +14,9 @@ namespace JogoXadrez.Utils;
         }
 
 
-        public static void ICores(string txt, ConsoleColor color) {
+        public static void ICores(string txt, ConsoleColor cor) {
             // printa texto na cor selecionada e reseta para cor padrão
-            Console.ForegroundColor = color;
+            Console.ForegroundColor = cor;
             Console.Write(txt);
             Console.ResetColor();
         }
@@ -60,7 +60,7 @@ namespace JogoXadrez.Utils;
         }
 
 
-        public static void IMostraTabuleiroAtual(string[,] posicoes)
+        public static void IMostraTabuleiroAtual(Peca[,] posicoes)
         {   
             
             string[] letras = ("A B C D E F G H").Split();
@@ -89,30 +89,30 @@ namespace JogoXadrez.Utils;
                     {
                         if (contador % 2 != 0)
                         {
-                            Console.ForegroundColor = ConsoleColor.Black;
-                            Console.BackgroundColor = ConsoleColor.White;
-                            Console.Write(posicoes[i,j]);
+                            Console.ForegroundColor = posicoes[i,j].Cor;
+                            Console.BackgroundColor = ConsoleColor.DarkYellow;
+                            Console.Write(posicoes[i,j].UniCode);
                         }
                         else
                         {
-                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.ForegroundColor = posicoes[i,j].Cor;
                             Console.BackgroundColor = ConsoleColor.Black;
-                            Console.Write(posicoes[i,j]);
+                            Console.Write(posicoes[i,j].UniCode);
                         }
                     }
                     else
                     {
                         if (contador % 2 != 0)
                         {
-                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.ForegroundColor = posicoes[i,j].Cor;
                             Console.BackgroundColor = ConsoleColor.Black;
-                            Console.Write(posicoes[i,j]);
+                            Console.Write(posicoes[i,j].UniCode);
                         }
                         else
                         {
-                            Console.ForegroundColor = ConsoleColor.Black;
-                            Console.BackgroundColor = ConsoleColor.White;
-                            Console.Write(posicoes[i,j]);
+                            Console.ForegroundColor = posicoes[i,j].Cor;
+                            Console.BackgroundColor = ConsoleColor.DarkYellow;
+                            Console.Write(posicoes[i,j].UniCode);
                         }
                     }
                     contador++;

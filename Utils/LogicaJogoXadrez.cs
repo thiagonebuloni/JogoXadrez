@@ -91,25 +91,96 @@ namespace JogoXadrez.Utils;
 
 
                 // cria e popula posicoes
-                string[,] posicoes = new string[8,8];
+                Peca[,] posicoes = new Peca[8,8];
 
-                // instancia peças
-                Peca peaoBranco1 = new Peca(1, Cor.BRANCA, Peca.Pecas.PEAO, "2A", true);
-                posicoes[6,0] = peaoBranco1.UniCode;
-                Peca peaoBranco2 = new Peca(2, Cor.BRANCA, Peca.Pecas.PEAO, "2B", true);
-                posicoes[6,1] = peaoBranco2.UniCode;
-                Peca peaoBranco3 = new Peca(3, Cor.BRANCA, Peca.Pecas.PEAO, "3C", true);
-                posicoes[6,2] = peaoBranco3.UniCode;
+                // instancia peças e posicoes iniciais
+
+                // pretas
+                Peca torrePreto0 = new Peca(0, ConsoleColor.Black, Peca.Pecas.TORRE, "8A");
+                posicoes[0,0] = torrePreto0;
+                Peca cavaloPreto0 = new Peca(1, ConsoleColor.Black, Peca.Pecas.CAVALO, "8B");
+                posicoes[0,1] = cavaloPreto0;
+                Peca bispoPreto0 = new Peca(2, ConsoleColor.Black, Peca.Pecas.BISPO, "8C");
+                posicoes[0,2] = bispoPreto0;
+                Peca rainhaPreto = new Peca(3, ConsoleColor.Black, Peca.Pecas.RAINHA, "8D");
+                posicoes[0,3] = rainhaPreto;
+                Peca reiPreto = new Peca(4, ConsoleColor.Black, Peca.Pecas.REI, "8E");
+                posicoes[0,4] = reiPreto;
+                Peca bispoPreto1 = new Peca(5, ConsoleColor.Black, Peca.Pecas.BISPO, "8F");
+                posicoes[0,5] = bispoPreto1;
+                Peca cavaloPreto1 = new Peca(6, ConsoleColor.Black, Peca.Pecas.CAVALO, "8G");
+                posicoes[0,6] = cavaloPreto1;
+                Peca torrePreto1 = new Peca(7, ConsoleColor.Black, Peca.Pecas.TORRE, "8H");
+                posicoes[0,7] = torrePreto1;
+                Peca peaoPreto0 = new Peca(8, ConsoleColor.Black, Peca.Pecas.PEAO, "7A");
+                posicoes[1,0] = peaoPreto0;
+                Peca peaoPreto1 = new Peca(9, ConsoleColor.Black, Peca.Pecas.PEAO, "7B");
+                posicoes[1,1] = peaoPreto1;
+                Peca peaoPreto2 = new Peca(10, ConsoleColor.Black, Peca.Pecas.PEAO, "7C");
+                posicoes[1,2] = peaoPreto2;
+                Peca peaoPreto3 = new Peca(11, ConsoleColor.Black, Peca.Pecas.PEAO, "7D");
+                posicoes[1,3] = peaoPreto3;
+                Peca peaoPreto4 = new Peca(12, ConsoleColor.Black, Peca.Pecas.PEAO, "7E");
+                posicoes[1,4] = peaoPreto4;
+                Peca peaoPreto5 = new Peca(13, ConsoleColor.Black, Peca.Pecas.PEAO, "7F");
+                posicoes[1,5] = peaoPreto5;
+                Peca peaoPreto6 = new Peca(14, ConsoleColor.Black, Peca.Pecas.PEAO, "7G");
+                posicoes[1,6] = peaoPreto6;
+                Peca peaoPreto7 = new Peca(15, ConsoleColor.Black, Peca.Pecas.PEAO, "7H");
+                posicoes[1,7] = peaoPreto7;
                 
-                int contador = 1;
+                // brancas
+                Peca peaoBranco0 = new Peca(8, ConsoleColor.White, Peca.Pecas.PEAO, "2A");
+                posicoes[6,0] = peaoBranco0;
+                Peca peaoBranco1 = new Peca(9, ConsoleColor.White, Peca.Pecas.PEAO, "2B");
+                posicoes[6,1] = peaoBranco1;
+                Peca peaoBranco2 = new Peca(10, ConsoleColor.White, Peca.Pecas.PEAO, "2C");
+                posicoes[6,2] = peaoBranco2;
+                Peca peaoBranco3 = new Peca(11, ConsoleColor.White, Peca.Pecas.PEAO, "2D");
+                posicoes[6,3] = peaoBranco3;
+                Peca peaoBranco4 = new Peca(12, ConsoleColor.White, Peca.Pecas.PEAO, "2E");
+                posicoes[6,4] = peaoBranco4;
+                Peca peaoBranco5 = new Peca(13, ConsoleColor.White, Peca.Pecas.PEAO, "2F");
+                posicoes[6,5] = peaoBranco5;
+                Peca peaoBranco6 = new Peca(14, ConsoleColor.White, Peca.Pecas.PEAO, "2G");
+                posicoes[6,6] = peaoBranco6;
+                Peca peaoBranco7 = new Peca(15, ConsoleColor.White, Peca.Pecas.PEAO, "2H");
+                posicoes[6,7] = peaoBranco7;
+                Peca torreBranco0 = new Peca(0, ConsoleColor.White, Peca.Pecas.TORRE, "1A");
+                posicoes[7,0] = torreBranco0;
+                Peca cavaloBranco0 = new Peca(1, ConsoleColor.White, Peca.Pecas.CAVALO, "1B");
+                posicoes[7,1] = cavaloBranco0;
+                Peca bispoBranco0 = new Peca(2, ConsoleColor.White, Peca.Pecas.BISPO, "1C");
+                posicoes[7,2] = bispoBranco0;
+                Peca rainhaBranco = new Peca(3, ConsoleColor.White, Peca.Pecas.RAINHA, "1D");
+                posicoes[7,3] = rainhaBranco;
+                Peca reiBranco = new Peca(4, ConsoleColor.White, Peca.Pecas.REI, "1E");
+                posicoes[7,4] = reiBranco;
+                Peca bispoBranco1 = new Peca(5, ConsoleColor.White, Peca.Pecas.BISPO, "1F");
+                posicoes[7,5] = bispoBranco1;
+                Peca cavaloBranco1 = new Peca(6, ConsoleColor.White, Peca.Pecas.CAVALO, "1G");
+                posicoes[7,6] = cavaloBranco1;
+                Peca torreBranco1 = new Peca(7, ConsoleColor.White, Peca.Pecas.TORRE, "1H");
+                posicoes[7,7] = torreBranco1;
+
                 
-                for (int i = 0; i < 8; i++) {
+                Peca nulo = new Peca(99, ConsoleColor.White, Peca.Pecas.NULL, "  "); // espaços vazios
+
+                for (int i = 2; i < 6; i++) {
                     for (int j = 0; j < 8; j++) {
-                        if (posicoes[i,j] == null) posicoes[i,j] = $"  ";
-                        contador++;
+                        posicoes[i,j] = nulo;
                     }
-
                 }
+
+                // int contador = 1;
+                
+                // for (int i = 0; i < 8; i++) {
+                //     for (int j = 0; j < 8; j++) {
+                //         if (posicoes[i,j] == null) posicoes[i,j] = $"  ";
+                //         contador++;
+                //     }
+
+                // }
 
 
                 string jogadorTurno = "Brancas";
